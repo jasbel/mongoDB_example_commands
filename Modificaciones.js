@@ -34,4 +34,7 @@ db.anuncio_principals.updateOne({ _id: "6082dea857f75a1f3859831l" }, { $set: { "
 db.anuncio_principals.updateOne({ _id: "6082dea857f75a1f3859831m" }, { $set: { "fec_fin": "2021-05-30T14:50:16Z" } })
 db.anuncio_principals.updateOne({ _id: "6082dea857f75a1f3859831n" }, { $set: { "fec_fin": "2021-05-30T14:50:16Z" } })
 
+db.payment_cards.updateOne({ _id: "60affd64667d2c2373b50c09" }, { $set: { "bill_to_address_state": "CA" } })
+db.payment_cards.updateOne({ _id: ObjectId("60affd64667d2c2373b50c09") }, { $set: { "bill_to_address_state": "CA" } })
+
 db.anuncio_principals.updateOne({ _id: ObjectId("6090226257f75a1f3859855a") }, { $set: { _id: ObjectId("6090226257f75a1f3859855b") } })

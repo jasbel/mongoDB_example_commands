@@ -21,7 +21,13 @@ db.anuncio_principals.find({"idanuncio":ObjectId("5f09f303d21c253e3fc55542")})
 
 
 db.anuncios.findOne({_id:ObjectId("6081c0cf6aed391e88c39e7d")})
+/* Busquedas Personalizadas */
 db.anuncios.find({"titulo":/anuncio/}).pretty()
+db.anuncio_alimentos_bebidas.find({"desc_trabajo":/pe/}).pretty()
+db.anuncio_alimentos_bebidas.find({"desc_trabajo":/pe/}).pretty()
+db.anuncio_alimentos_bebidas.find( {"desc_trabajo": { $regex : /pe/i } } )
+db.anuncio_alimentos_bebidas.find( {"titulo": { $regex : new RegExp("pe", "i") } } )
+
 db.anuncios.find("6082bca657f75a1f38598304").pretty()
 
 

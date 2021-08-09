@@ -86,7 +86,10 @@ orig._id = ObjectId("6090226257f75a1f3859855g")
 db.anuncio_principals.insert(orig)
 db.anuncio_principals.remove({_id:"6082dea857f75a1f3859831d"})
 
-var orig = db.anuncio_principals.findOne("60a545af60f28e6325eafa4b")
+var orig = db.anuncio_principals.findOne({_id:"6082dea857f75a1f3859831f"})
+orig._id = ObjectId("6090226257f75a1f3859855h")
+db.anuncio_principals.insert(orig)
+db.anuncio_principals.remove({_id:"6082dea857f75a1f3859831f"})
 
 
 
@@ -128,18 +131,3 @@ db.anuncio_principals.insert(orig)
 orig.n_orden = 13
 orig.idanuncio = ObjectId("609021f657f75a1f38598553")
 db.anuncio_principals.insert(orig)
-
-
-
-/** @example:
- {
-        "_id" : ObjectId("60a545af60f28e6325eafa4b"),
-        "fec_regis" : "2021-05-03T14:50:16Z",
-        "fec_in" : "2021-05-19T14:50:16Z",
-        "fec_fin" : "2021-12-25T14:50:16Z",
-        "n_orden" : 9,
-        "estado" : 0,
-        "idanuncio" : ObjectId("60881dfc57f75a1f38598387"),
-        "__v" : 0
-}
- */
