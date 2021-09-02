@@ -15,6 +15,7 @@ db.payment_cards.remove({_id:ObjectId("60afc9d820d9671e25bba3cd")})
 db.payment_cards.find().pretty()
 db.paymentcards.drop()
 db.follows.drop()
+db.publications.drop()
 db["anuncio-servicios-medicos"].drop()
 
 db.anuncio_comments.deleteMany({tipo : 2})

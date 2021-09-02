@@ -18,3 +18,5 @@ db.anuncio_comments.updateOne({ _id:ObjectId("60997806cdb8c90a9ccf3430")}, { $se
 db.anuncio_principals.updateOne({ _id:ObjectId("60a545af60f28e6325eafa4b")}, { $set: { "fec_fin" : "2021-12-25T14:50:16Z" } })
 
 db.oferta_alimentos_bebidas.updateOne({ _id:ObjectId("608992c857f75a1f3859848e")}, { $set: { "hasOrder" : true } })
+
+db.adcoin_profiles.updateOne({ _id:ObjectId("612fc511c520ed5e4c5b118f")}, { $set: { "amountCredit" : NumberDecimal("250") } })
