@@ -35,3 +35,5 @@ db.adcoin_profiles.updateOne({ _id:ObjectId("612fc511c520ed5e4c5b118f")}, { $set
   "time_prog" : 15
 }
 db.sucursals.updateOne({ _id:ObjectId("5d839daa3434d6394fa4ae6b")}, { $set: { "lat_ubi" : "-17.435316", "lng_ubi" : "-66.165275" } })
+
+db.perfils.findOne({_id:ObjectId("6075c4971a65305dd7b416b5")})
