@@ -21,19 +21,11 @@ db.oferta_alimentos_bebidas.updateOne({ _id:ObjectId("608992c857f75a1f3859848e")
 
 
 db.adcoin_profiles.updateOne({ _id:ObjectId("612fc511c520ed5e4c5b118f")}, { $set: { "amountCredit" : NumberDecimal("250") } })
-{
-  "_id" : ObjectId("5d839daa3434d6394fa4ae6b"),
-  "nombre_sucursal" : "Central Cochabamba",
-  "direccion" : "calle Mendez Arcos casi Plazuela Osorio",
-  "telefono" : "45811010",
-  "ciudad" : "Cochabamba",
-  "lat_ubi" : "-17.435316",
-  "lng_ubi" : "-66.165275",
-  "id_empresa" : ObjectId("5d839c6c3434d6394fa4ae63"),
-  "estado" : 1,
-  "__v" : 0,
-  "time_prog" : 15
-}
+
+
 db.sucursals.updateOne({ _id:ObjectId("5d839daa3434d6394fa4ae6b")}, { $set: { "lat_ubi" : "-17.435316", "lng_ubi" : "-66.165275" } })
 
-db.perfils.findOne({_id:ObjectId("6075c4971a65305dd7b416b5")})
+// db.perfils.findOne({_id:ObjectId("6075c4971a65305dd7b416b5")})
+
+// db.sucursals.find({ lat_ubi : 'undefined', lng_ubi : 'undefined' }).pretty().count()
+db.sucursals.updateMany({ lat_ubi : 'undefined', lng_ubi : 'undefined' }, {$set: { lat_ubi : '-17.397317', lng_ubi : '-66.163137' }})

@@ -8,9 +8,11 @@ db.recommends.update({ _id: 1 }, { $rename: { usuario_id: "user", usuario: "prof
 
 /* Renombrar una collection */
 db.anuncio_alimentos_bebidas.renameCollection("ad_fooddrinks")
-db.anuncio_animales_mascotas.renameCollection("ad_animalspets")
+db.anuncio_animales_mascotas2.renameCollection("ad_animalspets")
 db.anuncio_arte_antiguedades2.renameCollection("ad_artantiques")
 db.anuncio_hogar2.renameCollection("ad_homes")
+db.anuncio_agro2.renameCollection("ad_agronomy")
+db.ad_agronomy.renameCollection("ad_agronomys")
 db.dislike_publications.renameCollection("publication_dislikes")
 db.publication_likes.renameCollection("recommends")
 
