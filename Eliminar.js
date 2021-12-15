@@ -18,6 +18,21 @@ db.payment_cards.remove({ _id: ObjectId("60afc9d820d9671e25bba3cd") });
 /* DELETE Collections */
 db.payment_cards.find().pretty();
 db.paymentcards.drop();
+
+db.adfavorite_agronomies.drop();
+db.adfavorite_animalspets.drop();
+db.adfavorite_autoparts.drop();
+db.adfavorite_beautypersonals.drop();
+db.adfavorite_electronics.drop();
+db.adfavorite_experiences.drop();
+db.adfavorite_fooddrinks.drop();
+db.adfavorite_gametoys.drop();
+db.adfavorite_properties.drop();
+db.adfavorite_technicalservices.drop();
+db.adfavorite_trainingsports.drop();
+db.adfavorite_traveltourisms.drop();
+db.adfavorite_vehicles.drop();
+
 db.follows.drop();
 db.publications.drop();
 db["anuncio-servicios-medicos"].drop();
